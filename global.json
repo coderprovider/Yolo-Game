@@ -1,0 +1,29 @@
+{
+    "yolo_token": {
+        "type":"token",
+        "name": "yolo",
+        "address":"0xf77dd21c5ce38ac08786BE35Ef1d1DeC1a6a15F3",
+        "abi_file":"ABIs/yolo_token.abi"
+    },
+    
+    "quantum": {
+        "type":"game",
+        "name": "quantum",
+        "address":"0xA596f7D6587DE656d0Ef099d2F28fe699060BF97",
+        "abi_file":"ABIs/quantum.abi",
+        "minimum_eth":0.0003,
+        "minimum_yolo":70  // Not an accurate number 
+
+    },
+
+    "laserblast": {
+        "type":"game",
+        "name": "laserblast",
+        "address":"0xc6f17f7935B12a38fe4a80f4f4Db7DBaf324224c",
+        "abi_file":"ABIs/laserblast.abi",
+        "minimum_eth":0.0003,
+        "minimum_yolo":42.88084 // Accurate number in July 30
+
+    }
+
+}
