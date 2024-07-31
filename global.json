@@ -1,6 +1,7 @@
 {
-
     "basic_fee":0.000003,
+
+    "yolo_delegator": "0x00000000007FE8d7666BB0da2A5D13f72b8dABaB",
     "yolo_token": {
         "type":"token",
         "name": "yolo",
@@ -11,9 +12,9 @@
     "flipper": {
         "type":"game",
         "name": "flipper",
-        "address":"",
-        "abi_file":"ABIs/.abi",
-        "minimum_eth":0.0003,
+        "address":"0x96648d17c273A932197aCF2232653Bed7D69EC6f",
+        "abi_file":"ABIs/flipper.abi",
+        "minimum_eth":0.001,
         "minimum_yolo":70  
     },
 
@@ -23,7 +24,7 @@
         "address":"0xA596f7D6587DE656d0Ef099d2F28fe699060BF97",
         "abi_file":"ABIs/quantum.abi",
         "minimum_eth":0.0003,
-        "minimum_yolo":70  
+        "minimum_yolo":150  
     },
 
     "laserblast": {

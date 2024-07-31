@@ -9,10 +9,18 @@
 
 ```python
 
-import 
-import web3
-
-
+from yolo_interact import YOLO
+A = YOLO()
+A.set_account( YOUR_PRIVATEKEY )
+# Another method:
+# w3 = Web3(Web3.HTTPProvider("https://rpc.blast.io"))
+# A.account = w3.eth.account.from_key(YOUR_PRIVATEKEY)
+A.show_balance()
+A.account.address
+A.laserblast.show_args()
+A.laserblast.play(1, 0.0003, 'eth')
+A.laserblast.set_args(row_count = 9)
+A.laserblast.play(1, 200, 'yolo')
 
 ```
 
