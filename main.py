@@ -10,6 +10,7 @@ def main():
 
     parser.add_argument("--private-key",'-p', default='', type=str, dest='pri_key', help="Input your Private Key to import the wallet.")
     parser.add_argument("--game-name",'-gn', default='laserblast', type=str, dest='game', help="Input Game Name to start a game. Keep letter lowercase. flipper/laserblast/quantum")
+    parser.add_argument("--amount-peround",'-ap', default=0, type=float, dest='amount_1round', help="Input amount per round. Default unit of currency is yolo.")
     parser.add_argument("--num-rounds", default= 1, type = int, dest='num_rounds', help="Input number of rounds. Numbers over 10 will be split.")
     parser.add_argument("--amount-perround",'-ap', default=0, type=float, dest='amount_1round', help="Input amount per round. Default unit of currency is yolo.")
     parser.add_argument("--amount_currency",'-ac', default='yolo', type = str, dest='currency', help="Name of currency. Must be eth or yolo")
@@ -43,6 +44,7 @@ def main():
 
     game_class = getattr(YL, game_name, None)
     game_class.show_args()
+    # game_class.close_tags()
     game_class.set_account(private_key)
     game_class.set_args( **args_dict )
 
