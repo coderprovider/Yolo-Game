@@ -115,6 +115,13 @@ class Quantum(Games):
     is_above = False   # Bool ,True or False
     multiplier_ = 1.05 # Float between 1.05 to 100, 
 
+    #  def __init__(self, address, ABI):
+    #     YoloToken.address = address
+    #     YoloToken.Base = 10 ** 18
+    #     with open(ABI, 'r') as f:
+    #         abi_ = f.read()
+    #     self.contract = self.w3.eth.contract(address=address, abi=abi_)
+    
     def play(   self,
                 numberOfRounds:int,
                 amountPerRound,
