@@ -130,6 +130,8 @@ class Quantum(Games):
                 stopGain=0,   stopLoss=0,
                 isAbove=is_above,   multiplier=multiplier_,
             ):
+        
+        
 
         currency = self.analyze_currency(currencyName)
         if currencyName== "yolo" and numberOfRounds * amountPerRound < self.min_yolo:
