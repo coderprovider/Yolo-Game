@@ -110,6 +110,7 @@ class Flipper(Games):
         self.send_raw(raw_action=raw_, extra_value=extra_wei)
 
 class Quantum(Games):
+    
 
     extra_keys = ['is_above', 'multiplier']
     is_above = False   # Bool ,True or False
